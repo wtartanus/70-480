@@ -1,0 +1,173 @@
+1.1 Create the document structure
+    - HTML5 introduced new semantic elements to more clearly define sections of an HTML page. These elements inclued:
+        <section>, <article>, <nav>, <header>, <footer>, <aside>, <progress>, <mark>, <figure>, <figcaption>
+    - Elements within an HTML page can have their layout controlled when they are included inside structures such as <dic> elements and/or HTML tables.
+    - HTML5 sematnic elements provide the mchanism nexessary to structure te page more easily for accessivility via screen readers.
+    - Search engines take advantage of HTML5 semantics by leveraging the <article> element to determine the purpose of the page.
+
+1.2 Write code that interacts with UI controls
+    - JavaScript is a powerful tool that enables developers to manipulate the DOM programmatically in the browser.
+    - HTML5 supports rich media controls to incorporate video by using the <video> element and audio by using the <audio> element.
+    - The <video> element supports multiple media formats by using the <source> element.
+    - The HTML5 <canvas> and <svg> elements support a rich API to creat both simple and complex graphics in the browser.
+    - Both the <canvas> and <svg> graphics engines can draw text, lines, shapes, fonts, fills, and gradient.
+    - The <canvas> element is drawn on via JavaScript by getting a reference to the context.
+    - The <svg> element renders graphics by using a declarative syntax.
+
+1.3 Apply styling to HTML elements programmatically
+    - You can use CSS to define transformation effects.
+    - You can apply transformation via JavaScript to manipulate the DOM with effects such as rotate, skew, scale and translate.
+    - The visibility property provides options to control an elements's visibility within the page.
+
+1.4 Implement HTML5 APIs
+    - The new Web Storage API enables you to store data locally on the client computer.
+    - Web Storage supports both localStorage and SessionStorage.
+    - Data in Web Storage is stored as name and value pairs.
+    - The AppCache API provides a way to make webpages available when users are offline.
+    - The AppCache manifest defines what's available offline.
+    - The Geolocation API  provides a way to integrate location services into a webpage.
+    - The Geolocation API provides two methods: getPosition and watchPosition
+
+1.5 Establish the scope of objects and variables
+    - Variables are undefined until they are initialized.
+    - Variables are scoped and accessible depending on where they are declared. If they are inside a function, 
+      for example, they are local to the function.
+    - Passing parameters is the only way to make a local variable available in another function.
+    - The global namespace shouldn't be used because it's shared by all.
+    - You should apply a namespace to custom objects to prevent conflicts in the global namespace.
+    - The this keyword provides direct access to the object that raised the event.
+
+1.6 Create and implement objects and methods
+    - Everything in JavaScript is an object-even functions.
+    - JavaScript supports native objects and custom objects.
+    - Objects are created with the new keyword.
+    - Access methods and properties on objects with the dot notation: object.method or object.property.
+    - You can create custom objects dynamically or by using prototypes.
+    - Proptypes provide for object definition reuse, whereas dynamic objects require attributes and methods define for each use.
+    - Inheritance is achieved in JavaScript through the extension of prototypes.
+
+2.1 Implement program flow
+    - The for and for...in iterate for a known length of values.
+    - The while and do...while loops run until a Boolean condition is set to false.
+    - Arrays provide a mechanism in which to create lists of things.
+
+2.2 Raise and handle an event
+    - Events provide a way to interact with users when they perform actions on the webpage.
+    - Events cascade or buble through the entire DOM hierarchy.
+    - Focus evetns occur when an object gets or loses focus.
+    - Keyboard events occur when keyboard keys are pressed on a focused object.
+    - Mouse evetns occur when the mouse clicks an object or the pointer is moved over or off an object.
+    - Drag-and-drop functionality provides a way to move elements from one container to another.
+
+2.3 Implement exception handling
+    - Structured error handling is provided by the JavaScript language in the form of the try...catch...finally block.
+    - The try...catch...finally block provides a way to try some logic, catch an error and handle it appropriately,
+      and finally do some clean up.
+    - The finally block always runs whether or not an exception is thrown.
+    - Checking for a null value before accessing any objects to ensure that they are initialized is good practice.
+
+2.4 Implement a callback
+    - WebSockets provide bidirectional communication with a server.
+    - WebSockets support both non-secure (ws) and secure (wss) connections to the server.
+    - The jQuery AJAX framework provides a mechanism to make asynchronus web requests.
+    - You can wire up events by using the jQuery selector syntax.
+
+2.5 Create a web worker process
+    - Web workers allow the JavaScript runtime to provide multithreading.
+    - Web workers can have sub-workers.
+    - The number of workers that you can use is limitless, but too many workers can hinder performance.
+    - Web workers can receive a single parameter containing any data nedded for the worker.
+    - Web workers don't have access to the DOM of the calling page.
+    - Use setTimeout to delay before running a script function. Use setInterval to repat a script function after every specified interval.
+
+3.1 Validate user input by using HTML5 elements
+    - Input controls such as text and textarea allow users to type information into a webpage.
+    - Some input controls provide built-in validation, such as for URLs and email addresses.
+    - Radio buttons and check boxes provide controls for users to select items in a list.
+    - Reset and submit buttons control behavior of the HTML form.
+    - Users can't modify the content of a control that has the readonly attribute assigned.
+    - You can add a spelling checker to a text box to help users avoid spelling errors.
+    - The pattern attribute helps define a regualr expression for custom validation of formatted data.
+    - The required attribute ensure that a field is populated before users can submit the form.
+
+3.2 Validate user input by using JavaScript
+    - Regular expressions are strings of special characters that an interpreter understands and uses to validate text format.
+    - Regular expressions are objects in JavaScript that provide methods for testing input data.
+    - isNaN is a built-in function to determine whether a value isn't a number,
+      whereas isFinite validates whether the value is a finite number.
+    - Code injection is a technique that attackers use to inject malicious code into your application.
+    - iFrames and dynamic JavaScript are dangerous if not used properly in a webpage.
+
+3.3 Consume data
+    - JSON and XML are the most common formats used for data exchange.
+    - JSON consists of name/value pairs.
+    - XML is a structured element-based document.
+    - JavaScript provides built-in support for receiving data via the XMLHttpRequest object.
+
+3.4 Serialize, deserialize, and transmit data
+    - Browsers provide native support via the JSON object to work with serializing and deserializing JSON strings.
+    - The JSON.parse method deserializes a JSON string into an object,
+      and the JSON.stringify method serializes an object into a JSON string.
+    - By setting the XMLHttpRequest responseType property to the value 'blob', you can tetrieve binary data.
+    - By default, the form submit action sends the entire page to the server (based on the action attribute) for processing.
+    - Handling the submit event allows you to customize how the form dat is posted to the server.
+    - The jQuery.serialize method provides a convenient shortcut to convert specified input controls into a query string.
+
+4.1 Style HTML thext properties
+    - CSS3 provides the ability to style the appearance of text in the following ways:
+        - changing the color with the color property
+        - changing the text to bold with the font-weight property
+        - changing the text to italics with the font-style property
+        - changing the font type with the font-family property
+        - changing the size of the text with the font-size property
+    - CSS3 provides the ability to style the alignment of text with the text-align property.
+    - CSS3 porvides the ability to alter text indentation with the text-indent property.
+    - CSS3 provides the ability to alter the spacing between letters and the spacing between
+      words with the letter-spacing and word-spacing properties.
+    - CSS3 allows you to control how text hyphenates when the text needs to wrap within the boundaries of its container.
+
+4.2 Style HTML box properties
+    - Every HTML element is a box and has the propeties of a box such as height and width.
+    - CSS3 allows you to change the size of a box by spedifying a new height and width.
+    - CSS3 allows you to style box properties in the following ways:
+        - The border-style property allows you to specify a solid or dashed line for the border.
+        - The border-color property allows you to specify the color of the border.
+        - The border-spacing property allows you to specify the amount of space between adjacent elments.
+        - The border-width property allows you to specify a thickness for the border.
+        - Each side of the box can by styled differently.
+    - CSS3 provides a way to define the padding and margin that a box should have relative
+      to adjacent elements. This can be configured differently for each side of the box.
+    - An element can be made transparent or partially transparent by setting the opacity property
+    - An element can contain a background image by setting its background-image property.
+    - CSS3 provides the ability to create shadow effects by specifying the box-shadow property.
+    - CSS3 provides the ability to clip images using the clip property to show only a portion of an image.
+    - CSS3 can be used to establish an element's position as either fixed, absolute, or relative.
+    - The left and top CSS properties can be used to alter an element's position.
+
+4.3 Create a flexible content layout
+    - Flexbox allows you to lay out elments in a flow-like fashion.
+    - Multi-column layout allows you to separate content into a fixed number of columns, like a newspaper layout.
+    - The flow of text around elements like images can be controlled using wrap-flow alyouts.
+    - The grid layout provides the best way to separate the layout from the content by specifying explicitly in CSS
+      where each element should be displayed within a predifined grid.
+
+4.4 Create an animated and adaptive UI
+    - HTML elements can be manipulated with transitions using the transition-property,
+      transition-duration, and transition-delay CSS properties.
+    - Elements can be manipulated in 2-D and 3-D space with effects such as translate, scale,
+      rotate, and matrix.
+    - Media queries allow you to have a dynamic, responsive user interface based on the view port size and type.
+    - The visibility property hides a control but keeps its position in the overall layout.
+      Using the display property to hide a control removes it from the layout as well.
+
+4.5 Find elements using CSS selectors and jQuery
+    - Pseduo-elements and pseudo-classes provide and advanced mechanism for seraching HTML elements in a page and applying styles.
+    - Using pseudo-elements and pseudo-classes you can change style of an element based on user actions.
+    - Using pseudo-elements and pseudo-classeds you can gain granular control over parts of the text in a text block.
+
+4.6 Structure a CSS file by using CSS selectors
+    - Referencing elements correctly takes careful consideration of how you will structure your CSS and your HTML elements.
+    - Selectors can be nested and joined together to get more specific.
+    - HTML elements inherit styles automatically from their parent elements.
+    - CSS is processed from the top down, so that last style processed wins if it conflicts with other style decalatations.
+    - !important can be used to ensure that the desired style is rendered when there is a competing CSS declaration.

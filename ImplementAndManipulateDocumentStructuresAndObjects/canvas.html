@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+    <script>
+      window.onload = function() {
+        const drawingSurface = document.getElementById('drawingSurface');
+        const ctxt = drawingSurface.getContext('2d');
+
+        ctxt.strokeText('1. Text with default font', 100, 100);
+
+        ctxt.font = '24px arial';
+        ctxt.strokeText('2. Text with alerted font', 100, 125);
+
+        ctxt.font = '24px arial';
+        ctxt.strokeStyle = 'Red';
+        ctxt.strokeText('3. Text with altered colored font', 100, 160);
+
+        ctxt.font = '24px arial';
+        ctxt.fillStyle = 'Red';
+        ctxt.fillText('4. Text with altered colored font', 100, 185);
+
+        ctxt.font = '24px arial';
+        ctxt.textAlign = 'center';
+        ctxt.fillStyle = 'Red';
+        ctxt.fillText('5. Text with altered colored font Centered.', drawingSurface.width / 2, drawingSurface.height / 2);
+      }
+    </script>
+  </head>
+  <body>
+    <canvas id="drawingSurface" width="600" height="400">
+      Your browser does not support HTML5.
+    </canvas>
+  </body>
+</html>

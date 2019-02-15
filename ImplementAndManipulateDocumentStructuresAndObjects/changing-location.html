@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+      .visible {
+        display: inline;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+    <script>
+      function showNode(id) {
+        document.getElementById(id).classList.add('visible');
+        document.getElementById(id).classList.remove('hidden');
+      }
+
+      function hideNode(id) {
+        document.getElementById(id).classList.remove('visible');
+        document.getElementById(id).classList.add('hidden');
+      }
+
+      window.onload = function() {
+        const q1 = document.getElementById('Question1').onclick = function(event) {
+          const { value } = event.target;
+          if (value !== undefined) {
+            hideNode('Question1');
+            if (value) {
+              showNode('Question2');
+            } else {
+              showNode('Question3');
+            }
+          }
+        };
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      A dynamic Questionnaire.
+    </header>
+    <section>
+      <article>
+        <hgroup>
+          <h1>Questionnaire</h1>
+          <h2>Answer the questions in order as they appear.</h2>
+        </hgroup>
+        <div id="Question1" class="visible">
+            <p>Question 1</p>
+            <form>
+              <input type="radio" id="yes" name="question" value="1" />
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="question" value="0" />
+              <label for="no">No</label>
+            </form>
+          </div>
+          <div id="Question2" class="hidden">
+            <p>Question 2</p>
+            <form>
+              <input type="radio" id="yes" name="question" value="1" />
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="question" value="0" />
+              <label for="no">No</label>
+            </form>
+          </div>
+          <div id="Question3" class="hidden">
+              <p>Question 3</p>
+              <form>
+                <input type="radio" id="yes" name="question" value="1" />
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="question" value="0" />
+                <label for="no">No</label>
+              </form>
+            </div>
+            <div id="Question4" class="hidden">
+                <p>Question 4</p>
+                <form>
+                  <input type="radio" id="yes" name="question" value="1" />
+                  <label for="yes">Yes</label>
+                  <input type="radio" id="no" name="question" value="0" />
+                  <label for="no">No</label>
+                </form>
+              </div>
+          <div id="Question5" class="hidden">
+            <p>Question 5</p>
+            <form>
+              <input type="radio" id="yes" name="question" value="1" />
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="question" value="0" />
+              <label for="no">No</label>
+            </form>
+          </div>
+          <div id="Question6" class="hidden">
+            <p>Question 6</p>
+            <form>
+              <input type="radio" id="yes" name="question" value="1" />
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="question" value="0" />
+              <label for="no">No</label>
+            </form>
+          </div>
+          <div id="Question7" class="hidden">
+            <p>Question 7</p>
+            <form>
+              <input type="radio" id="yes" name="question" value="1" />
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="question" value="0" />
+              <label for="no">No</label>
+            </form>
+          </div>
+          <div id="Question8" class="hidden">
+            <p>Question 8</p>
+            <form>
+              <input type="radio" id="yes" name="question" value="1" />
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="question" value="0" />
+              <label for="no">No</label>
+            </form>
+          </div>
+          <div id="Question9" class="hidden">
+            <p>Question 9</p>
+            <form>
+              <input type="radio" id="yes" name="question" value="1" />
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="question" value="0" />
+              <label for="no">No</label>
+            </form>
+          </div>
+          <div id="Question10" class="hidden">
+            <p>Question 10</p>
+            <form>
+              <input type="radio" id="yes" name="question" value="1" />
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="question" value="0" />
+              <label for="no">No</label>
+            </form>
+          </div>
+      </article>
+    </section>
+  </body>
+</html>

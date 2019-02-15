@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="uft-8">
+    <title>SVG</title>
+
+    <script>
+      window.onload = function() {
+
+      }
+      function Red(event) {
+        const circle = event.target;
+        circle.setAttribute('style', 'fill: red');
+      }
+
+      function Green(event) {
+        const circle = event.target;
+        circle.setAttribute('style', 'fill: green');
+      }
+    </script>
+  </head>
+  <body>
+    <svg style="height: 500px;">
+      <polygon points="10,15 30,35 10,85 100,85 10,35 70,35,100,15" fill="purple" />
+      <polyline points="10,150 30,170 50,132 62,196 78,165 96,170" style="stroke:orange; fill:none; stroke-width: 5;" />
+      <line xl="150" yl="100" x2="150" style="stroke:blue; stroke-width: 3;" />
+      <ellipse cx="250" cy="150" rx="30" ry="55" fill="green" />
+      <text x="10" y="10" style="stroke: black; stroke-width: 1;" />
+    </svg>
+  </body>
+</html>

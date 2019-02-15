@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Validate User Input</title>
+    <script>
+      function CheckString() {
+        try {
+          var s = document.getElementById('regExString').value;
+          var regExpression = /^[A-Z,a-z]\d[A-Z,a-z][\s{1}]?\d[A-Z,a-z]\d/;
+          if (regExpression.test(s)) {
+            alert('Valid postal code.')
+          } else {
+            alert('Invalid postal code.');
+          }
+        } catch (e) {
+          alert(e.message);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <input type="text" id="regExString" />
+      <button onclick="CheckString()">Evaluate</button>
+    </form>
+  </body>
+</html>
+
